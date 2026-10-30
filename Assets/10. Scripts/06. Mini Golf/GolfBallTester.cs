@@ -1,20 +1,19 @@
-﻿using System;
-using Study.Utilities;
+﻿using Study.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Study3D.MiniGolf
+namespace MiniGolf.KSG
 {
     public class GolfBallTester : MonoBehaviour
     {
         public GolfBall ball;
         public Vector3 startPosition;
-
+        
         private void Update()
         {
             if (SimpleInput.GetKeyDown(Key.Digit1))
             {
-                ball.ReturnToLasShotPosition();
+                ball.ReturnToLastShotPosition();
             }
             if (SimpleInput.GetKeyDown(Key.Digit2))
             {
